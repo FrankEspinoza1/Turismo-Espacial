@@ -1,0 +1,110 @@
+body{
+    background-image: url(./ImageBg/background-home-desktop.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+nav{
+    padding: 2rem;
+}
+
+.contenedor{
+    display: flex;
+    align-items: center;
+    padding-top: 5rem;
+    height: 700px;
+    padding-bottom: 5px;;
+    margin: 0;
+}
+
+.contenedor-texto {
+    padding-left: 6rem;
+    width: 50%;
+    width: 70%;
+    
+}
+
+.contenedor-boton{
+    padding-left: 270px;
+    align-self: center;
+    width: 50%;
+}
+.boton{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 200px;
+    width: 200px;
+    background: #ffffff;
+    border-radius: 50%;
+}
+
+.boton a{
+    align-self: center;
+    color: #000000;
+    font-size: 2rem;
+    text-decoration: none;
+}
+
+/* Todlas las letras*/ 
+.text-color{
+    color: whitesmoke;
+}
+
+
+.titulo{/* H1 */
+    width: 400px;
+    font-size: 150px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.parrafo-principal{
+    width: 500px;
+}
+
+@media (max-width:768px){
+    body{
+        background-image: url(./ImageBg/background-home-tablet.jpg);
+    }
+    .contenedor{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .contenedor-boton{
+        display: flex;
+        flex-wrap: wrap;
+        padding-top: 5rem;
+        padding-left: 0;
+        width: 35%;
+    }
+}
+
+@media (max-width:500px){
+    body{
+        display: flex;
+        flex-direction: column;
+        background-image:url(./ImageBg/background-home-mobile.jpg) ;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+    }
+    .titulo{
+        width: 100%;
+        font-size: 100px;
+    }
+    .contenedor-texto p{
+        width: 100%;
+    }
+    .boton{
+        height: 150px;
+        width: 150px;
+    }
+    .boton a{
+        font-size: 1.5rem;
+    }
+}
